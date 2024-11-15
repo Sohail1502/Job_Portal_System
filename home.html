@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6f9;
+            color: #2d3436;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #6c5ce7;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 3rem;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: #00b894;
+        }
+        
+        footer {
+            background-color: #6c5ce7;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer:hover {
+            background-color: #00b894;
+        }
+        
+        .content {
+            margin: 20px;
+            text-align: center;
+        }
+        
+        .job-listings {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .job-card {
+            background-color: white;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .job-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .job-card h3 {
+            font-size: 1.6rem;
+            color: #6c5ce7;
+            margin-bottom: 10px;
+        }
+        
+        .job-card p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        
+        .job-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00b894;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .job-card a:hover {
+            background-color: #55d6ad;
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .job-card {
+                width: 45%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .job-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Job Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="post-job.html">Post a Job</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content Section -->
+    <section id="home" class="content">
+        <h2>Welcome to Job Portal</h2>
+        <p>Your gateway to exciting job opportunities. Find your dream job and apply now!</p>
+
+        <!-- Featured Job Listings -->
+        <h3>Featured Job Listings</h3>
+        <div class="job-listings">
+            <div class="job-card">
+                <h3>Software Developer</h3>
+                <p><strong>Company:</strong> XYZ Corp</p>
+                <p><strong>Location:</strong> Remote</p>
+                <p><strong>Skills:</strong> JavaScript, React, Node.js</p>
+                <a href="post-job.html">Apply Now</a>
+            </div>
+            <div class="job-card">
+                <h3>Backend Developer</h3>
+                <p><strong>Company:</strong> ABC Ltd</p>
+                <p><strong>Location:</strong> New York, USA</p>
+                <p><strong>Skills:</strong> Python, Django, PostgreSQL</p>
+                <a href="post-job.html">Apply Now</a>
+            </div>
+            <div class="job-card">
+                <h3>UI/UX Designer</h3>
+                <p><strong>Company:</strong> Creative Agency</p>
+                <p><strong>Location:</strong> San Francisco, CA</p>
+                <p><strong>Skills:</strong> Adobe XD, Figma, HTML/CSS</p>
+                <a href="post-job.html">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Job Portal</p>
+    </footer>
+
+</body>
+
+</html>
